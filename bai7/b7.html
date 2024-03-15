@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+    }
+    nav {
+        background-color: #333;
+        color: white;
+        padding: 10px;
+        display: flex;
+        text-align: center;
+    }
+    nav h2 {
+        margin: 0;
+        padding: 0;
+    }
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 10px;
+    }
+    #container {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-gap: 20px;
+        padding: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    #container-link {
+        grid-column: 1 / 2;
+    }
+    .paragraph-colunmn {
+        grid-column: 2 / 3;
+    }
+    #container-side-right {
+        grid-column: 3 / 4;
+    }
+    .box1, .box2, .box3 {
+        background-color: #ccc;
+        padding: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    footer {
+        color: white;
+        background-color: black;
+        text-align: center;
+        padding: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+    @media screen and (max-width: 768px) {
+        #container {
+            grid-template-columns: 1fr;
+        }
+        #container-link, .paragraph-colunmn, #container-side-right {
+            grid-column: auto;
+        }
+    }
+</style>
+<body>
+    <nav>
+        <h2>Logo</h2>
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Projects</a>
+        <a href="">Contact</a>
+        <a href="">Login</a>
+    </nav>
+    <div id="container">
+        <div id="container-link">
+                    <a href="">Link</a>
+                    <a href="">Link</a>
+                    <a href="">Link</a>
+        </div>
+        <div class="paragraph-colunmn">
+            <h1>Welcome</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+                    tristique.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+                    tristique.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+                    tristique.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+                    tristique.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+                    tristique.
+            </p>
+            <hr>
+            <h1>Test</h1>
+            <p>Lorem ispum......</p>
+        </div>
+        <div id="container-side-right">
+            <div class="box1">ADS</div>
+            <div class="box2">ADS</div>
+            <div class="box3">ADS</div>
+        </div>
+    </div>
+    <footer><p>Footer Text</p></footer>
+</body>
+</html>
