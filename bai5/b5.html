@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Facebook Homepage</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Fixed Header */
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #3b5998;
+      color: #fff;
+      padding: 10px 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      z-index: 1000;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      position: fixed;
+      top: 40px; /* chiều cao của header */
+      left: 0;
+      width: 200px;
+      height: 100%;
+      background-color: #f0f2f5;
+      padding: 20px;
+    }
+
+    /* Main Content */
+    .main-content {
+      margin-left: 220px; /* 200px của sidebar + 20px khoảng cách */
+      padding: 20px;
+    }
+
+    /* Sample Styling */
+    .post {
+      background-color: #fff;
+      border: 1px solid #dddfe2;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <h1>Facebook</h1>
+</header>
+<div class="sidebar">
+  <h2>Sidebar</h2>
+  <!-- Thêm nội dung của sidebar -->
+</div>
+<div class="main-content">
+  <div class="post">
+    <h2>Post Title</h2>
+    <p>This is a sample post content.</p>
+  </div>
+  <!-- Thêm các bài viết khác vào đây -->
+</div>
+</body>
+</html>
