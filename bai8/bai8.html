@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox Design | Nhat Huy Group</title>
+</head>
+<style>
+    li{
+        list-style: none;
+    }
+    #menu{
+        display: flex;
+        background-color: black;
+        color: white;
+        position: relative;
+    }
+    a {
+        color: white;
+        margin: 10px;
+    }
+    .menu-item{
+        position: relative;
+    }
+    .menu-item:hover .child-menu{
+        display: block;
+    }
+    .child-menu{
+        position: absolute;
+        top: 100%;
+        color: red;
+        background-color: gray;
+        display: none;
+    }
+    #list {
+        display : flex;
+        margin: 10px;
+        padding: 0;
+    }
+    #list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .list-product {
+        width: calc(33.33% - 20px); /* 20px là padding giữa các phần tử */
+        margin: 10px;
+        padding: 10px;
+        box-sizing: border-box;
+        background-color: #f0f0f0;
+        text-align: center;
+    }
+
+    .list-product img {
+        max-width: 100%;
+        height: auto;
+    }
+
+</style>
+<body>
+    <div id="menu">
+        <a href="" class="menu-item">Home</a>
+        <a href="" class="menu-item">
+            <span>Products</span>
+            <ul class="child-menu">
+                <li>Iphone</li>
+                <li>Samsung</li>
+                <li>Acer</li>
+                <li>Toshiba</li>
+                <li>TV Bravia</li>
+            </ul>
+        </a>
+
+        <a href="" class="menu-item">News</a>
+    </div>
+    <div id="list">
+        <div class="list-product">
+            <img src="image/432748152_1548578519256723_1659854399263833242_n.jpg" alt="#" width="96px">
+            <p>Iphone 13 Promax</p>
+            <p>Price: 60.000.000 VNDong</p>
+        </div>
+        <div class="list-product">
+            <img src="image/432748152_1548578519256723_1659854399263833242_n.jpg" alt="#" width="96px">
+            <p>Iphone 13 Promax</p>
+            <p>Price: 60.000.000 VNDong</p>
+        </div>
+        <div class="list-product">
+            <img src="image/432748152_1548578519256723_1659854399263833242_n.jpg" alt="#" width="96px">
+            <p>Iphone 13 Promax</p>
+            <p>Price: 60.000.000 VNDong</p>
+        </div>
+        <div class="list-product">
+            <img src="image/432748152_1548578519256723_1659854399263833242_n.jpg" alt="#" width="96px">
+            <p>Iphone 13 Promax</p>
+            <p>Price: 60.000.000 VNDong</p>
+        </div>
+        <div class="list-product">
+            <img src="image/432748152_1548578519256723_1659854399263833242_n.jpg" alt="#" width="96px">
+            <p>Iphone 13 Promax</p>
+            <p>Price: 60.000.000 VNDong</p>
+        </div>
+        <div class="list-product">
+            <img src="image/432748152_1548578519256723_1659854399263833242_n.jpg" alt="#" width="96px">
+            <p>Iphone 13 Promax</p>
+            <p>Price: 60.000.000 VNDong</p>
+        </div>
+        <div class="list-product">
+            <img src="image/432748152_1548578519256723_1659854399263833242_n.jpg" alt="#" width="96px">
+            <p>Iphone 13 Promax</p>
+            <p>Price: 60.000.000 VNDong</p>
+        </div>
+        <div class="list-product">
+            <img src="image/432748152_1548578519256723_1659854399263833242_n.jpg" alt="#" width="96px">
+            <p>Iphone 13 Promax</p>
+            <p>Price: 60.000.000 VNDong</p>
+        </div>
+        <div class="list-product">
+            <img src="image/432748152_1548578519256723_1659854399263833242_n.jpg" alt="#" width="96px">
+            <p>Iphone 13 Promax</p>
+            <p>Price: 60.000.000 VNDong</p>
+        </div>
+        <div class="list-product">
+            <img src="image/432748152_1548578519256723_1659854399263833242_n.jpg" alt="#" width="96px">
+            <p>Iphone 13 Promax</p>
+            <p>Price: 60.000.000 VNDong</p>
+        </div>
+        <div class="list-product">
+            <img src="image/432748152_1548578519256723_1659854399263833242_n.jpg" alt="#" width="96px">
+            <p>Iphone 13 Promax</p>
+            <p>Price: 60.000.000 VNDong</p>
+        </div>
+        <div class="list-product">
+            <img src="image/432748152_1548578519256723_1659854399263833242_n.jpg" alt="#" width="96px">
+            <p>Iphone 13 Promax</p>
+            <p>Price: 60.000.000 VNDong</p>
+        </div>
+        <div class="list-product">
+            <img src="image/432748152_1548578519256723_1659854399263833242_n.jpg" alt="#" width="96px">
+            <p>Iphone 13 Promax</p>
+            <p>Price: 60.000.000 VNDong</p>
+        </div>
+        <div class="list-product">
+            <img src="image/432748152_1548578519256723_1659854399263833242_n.jpg" alt="#" width="96px">
+            <p>Iphone 13 Promax</p>
+            <p>Price: 60.000.000 VNDong</p>
+        </div>
+    </div>
+</body>
+</html>
